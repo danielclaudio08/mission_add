@@ -46,17 +46,11 @@
       .card{grid-column:span 6}
     }
 
-    /* IMAGE STRIP */
-    .strip{margin-top:26px;border-radius:18px;overflow:hidden}
-    .strip img{display:block;width:100%;height:220px;object-fit:cover}
-
     /* CTA */
     .cta{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center}
-    .btn{appearance:none;border:none;border-radius:12px;padding:12px 18px;font-weight:700;cursor:pointer}
+    .btn{appearance:none;border:none;border-radius:12px;padding:12px 18px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;text-align:center}
     .primary{background:var(--accent);color:#1a2433}
     .primary:hover{background:var(--accent-dark)}
-    .ghost{background:#fff;border:1px solid #e5e7eb;color:#1f2937}
-    .ghost:hover{background:#f9fafb}
 
     /* FOOTER */
     .footer{margin-top:18px;padding:14px 0 24px;color:#667085;text-align:center;font-size:14px}
@@ -78,7 +72,7 @@
       <section class="content">
         <div class="theme">
           <h2>Rekindling Purpose • Renewing Faith • Strengthening Camaraderie</h2>
-          <p class="subtitle">A once‑a‑year homecoming to celebrate the mission that shaped us, the friendships that sustain us, and the Savior who unites us.</p>
+          <p class="subtitle">A once-a-year homecoming to celebrate the mission that shaped us, the friendships that sustain us, and the Savior who unites us.</p>
         </div>
 
         <!-- Feature Cards: crisp, high-contrast, readable on any screen -->
@@ -116,14 +110,9 @@
           </div>
         </div>
 
-        <!-- Image strip with subtle, relevant backgrounds (kept behind content for readability) -->
-        <figure class="strip" aria-label="Thematic imagery: service, connection, homecoming">
-          <img src="https://images.unsplash.com/photo-1520975916090-6f53df2b1f3f?auto=format&fit=crop&w=1600&q=80" alt="Hands joined in unity, symbolic of service and support" />
-        </figure>
-
+        <!-- CTA: only calendar button -->
         <div class="cta">
-          <button class="btn primary" aria-label="RSVP">RSVP &amp; Get Link</button>
-          <button class="btn ghost" aria-label="Add to calendar">Add to Calendar</button>
+          <a class="btn primary" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Virtual+Reunion+2025+—+Return+Home+with+Our+Savior&dates=20251019T000000Z/20251019T020000Z&details=Join+us+for+our+annual+virtual+reunion+celebrating+service,+connection,+and+faith.&location=Online" target="_blank" rel="noopener noreferrer">Add to Calendar</a>
         </div>
 
         <div class="footer">You are welcome. You are remembered. You are part of this eternal family.</div>
